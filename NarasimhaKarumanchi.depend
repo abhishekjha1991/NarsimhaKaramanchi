@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1520341833 source:e:\codeblocks\narasimhakarumanchi\chapter2.cpp
+	<iostream>
+
+1520343196 source:e:\codeblocks\narasimhakarumanchi\main.cpp
+	"Chapter2.cpp"
+
+1520343225 e:\codeblocks\narasimhakarumanchi\chapter2.cpp
+	<iostream>
+
