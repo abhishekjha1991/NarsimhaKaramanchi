@@ -90,4 +90,118 @@ inline void checkIfSortedRecursion(int arr[], int size){
         cout << "Sorted array." << endl;
     }
 }
+
+inline unsigned short findMaxConnectivityUtil(int arr[][5], unsigned short m, unsigned short n){
+    int temp = 0;
+    arr[m][n] = -32768;
+
+    short Direction[][2] = {{-1, -1}, {-1, 0}, {-1, 1}, {0, -1},
+                            {0, 1}, {1, -1}, {1, 0}, {1,1}};
+
+    for(unsigned short loop1=0; loop1<8; loop1++){
+        short newRow = m+Direction[loop1][0];
+        short newCol = n+Direction[loop1][1];
+        if(newRow < 0 || newRow > 4 || newCol < 0 || newCol > 4 || arr[newRow][newCol] != 1){
+            continue;
+        }else{
+            temp = temp + findMaxConnectivityUtil(arr, newRow, newCol);
+        }
+    }
+
+    return 1+temp;
+}
+
+inline void findMaxConnectivity(int arr[][5]){
+    int maxConnectivity = 0;
+    for(unsigned short loop1=0; loop1<5; loop1++){
+        for(unsigned short loop2=0; loop2<5; loop2++){
+            if(arr[loop1][loop2] == 1){
+                int temp = findMaxConnectivityUtil(arr, loop1, loop2);
+                if(temp > maxConnectivity){
+                    maxConnectivity = temp;
+                }
+            }
+        }
+    }
+
+    cout<< "Max connectivity :" << maxConnectivity << endl;
+}
+
+inline void generateAllStringsOfNBitsUtil(int arr[], int n, unsigned int size){
+    if(n==0){
+        for(unsigned int loop1=0; loop1<size; loop1++){
+            cout << arr[loop1];
+        }
+        cout << " ";
+    }else{
+        arr[n-1] = 0;
+        generateAllStringsOfNBitsUtil(arr, n-1, size);
+        arr[n-1] = 1;
+        generateAllStringsOfNBitsUtil(arr, n-1, size);
+    }
+}
+
+inline void generateAllStringsOfNBits(int n){
+    if(n < 1){
+        cout << "Invalid size : " << n << endl;
+        return;
+    }
+
+    int *arr = new int[n]();
+    generateAllStringsOfNBitsUtil(arr, n, n);
+    cout << endl;
+    delete arr;
+}
+
+inline void generateAllStringsOfLengthNDrawnFrom1ToKUtil(int arr[], int n, unsigned int k, unsigned int size){
+    if(n == 0){
+        for(unsigned int loop1=0; loop1<size; loop1++){
+            cout << arr[loop1];
+        }
+        cout << " ";
+    }else{
+        for(unsigned int loop1=1; loop1<=k; loop1++){
+            arr[n-1]=loop1;
+            generateAllStringsOfLengthNDrawnFrom1ToKUtil(arr, n-1, k, size);
+        }
+    }
+}
+
+inline void generateAllStringsOfLengthNDrawnFrom1ToK(int n, int k){
+    if(n < 1 || k < 1){
+        cout << "Invalid inputs." << endl;
+        return;
+    }
+
+    int *arr = new int[n]();
+    generateAllStringsOfLengthNDrawnFrom1ToKUtil(arr, n, k, n);
+    cout << endl;
+    delete arr;
+}
+
+
+inline void generatePermutationsUtil(char str[], unsigned int first, unsigned int last){
+    if(first == last){
+        cout << str << " ";
+    }else{
+        for(unsigned int loop1=first; loop1<last; loop1++){
+            char temp = str[first];
+            str[first] = str[loop1];
+            str[loop1] = temp;
+            generatePermutationsUtil(str, first+1, last);
+            temp = str[first];
+            str[first] = str[loop1];
+            str[loop1] = temp;
+        }
+    }
+}
+
+inline void generatePermutations(char str[], int size){
+    if((str != 0 && str[0] == '\0') || size == 0){
+        cout << "Invalid string." << str << endl;
+        return;
+    }
+    generatePermutationsUtil(str, 0, size);
+}
+
 #endif

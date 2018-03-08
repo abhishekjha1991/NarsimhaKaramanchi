@@ -1,4 +1,5 @@
 #include "Chapter2.cpp"
+#include "Chapter4.cpp"
 
 void testFactorialUsingRecursion(){
     factorialRecursion(0);
@@ -35,14 +36,64 @@ void testSortedArrayUsingRecursion(){
     checkIfSortedRecursion(arr, 10);
 }
 
-int main()
-{
+void testLenghtOfConnectedCellsOf1s(){
+    int arr[][5] = {{0, 1, 0, 0, 0},
+                    {0, 1, 1, 0, 0},
+                    {0, 1, 1, 1, 1},
+                    {1, 1, 0, 0, 1},
+                    {0, 1, 0, 1, 0}};
+
+    findMaxConnectivity(arr);
+}
+
+void testGenerateAllStringsOfNBits(){
+    generateAllStringsOfNBits(0);
+    generateAllStringsOfNBits(1);
+    generateAllStringsOfNBits(2);
+}
+
+void testGenerateAllStringsOfLengthNDrawnFrom1ToK(){
+    generateAllStringsOfLengthNDrawnFrom1ToK(0, 0);
+    generateAllStringsOfLengthNDrawnFrom1ToK(1, 0);
+    generateAllStringsOfLengthNDrawnFrom1ToK(0, 1);
+    generateAllStringsOfLengthNDrawnFrom1ToK(1, 5);
+    generateAllStringsOfLengthNDrawnFrom1ToK(5, 1);
+    generateAllStringsOfLengthNDrawnFrom1ToK(5, 2);
+    generateAllStringsOfLengthNDrawnFrom1ToK(5, 5);
+    generateAllStringsOfLengthNDrawnFrom1ToK(4, 5);
+    generateAllStringsOfLengthNDrawnFrom1ToK(5, 4);
+}
+
+void testGeneratePermutations(){
+    generatePermutations("\0", 2);
+    char str[5] = {'a', 'b', 'c', 'd', '\0'};
+    generatePermutations(str, 4);
+}
+
+void testChapter2(){
     testFactorialUsingRecursion();
     testFactorialUsingIteration();
     testBackwardPrinting();
     testTowersOfHanoi();
     testSortedArrayUsingRecursion();
+    testLenghtOfConnectedCellsOf1s();
+    testGenerateAllStringsOfNBits();
+    testGenerateAllStringsOfLengthNDrawnFrom1ToK();
+    testGeneratePermutations();
+}
 
+void testChapter4(){
+    BasicStackTesting();
+    testBalancedSymbols();
+    testFindMinInConstantTime();
+    testPalindromeUsingStack();
+    //testReverseAStackUsingRecursion();
+}
+
+int main()
+{
+    //testChapter2();
+    testChapter4();
 
     cout << endl << endl << endl;
     return 0;

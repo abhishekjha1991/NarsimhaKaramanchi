@@ -1,10 +1,31 @@
 # depslib dependency file v1.0
-1520341833 source:e:\codeblocks\narasimhakarumanchi\chapter2.cpp
+1520520082 source:e:\codeblocks\narasimhakarumanchi\chapter2.cpp
 	<iostream>
 
-1520343196 source:e:\codeblocks\narasimhakarumanchi\main.cpp
+1520519727 source:e:\codeblocks\narasimhakarumanchi\main.cpp
 	"Chapter2.cpp"
+	"Chapter4.cpp"
 
-1520343225 e:\codeblocks\narasimhakarumanchi\chapter2.cpp
+1520520082 e:\codeblocks\narasimhakarumanchi\chapter2.cpp
 	<iostream>
+
+1520517185 e:\codeblocks\narasimhakarumanchi\include\stack.h
+	<string>
+	<iostream>
+
+1520428579 source:e:\codeblocks\narasimhakarumanchi\src\stack.cpp
+	"Stack.h"
+
+1520520242 source:e:\codeblocks\narasimhakarumanchi\chapter4.cpp
+	"include\Stack.h"
+	"include\Util.h"
+
+1520520242 e:\codeblocks\narasimhakarumanchi\chapter4.cpp
+	"include\Stack.h"
+	"include\Util.h"
+
+1520518467 e:\codeblocks\narasimhakarumanchi\include\util.h
+
+1520518243 source:e:\codeblocks\narasimhakarumanchi\src\util.cpp
+	"Util.h"
 
