@@ -1,5 +1,6 @@
 #include "Chapter2.cpp"
 #include "Chapter4.cpp"
+#include "Chapter10.cpp"
 
 void testFactorialUsingRecursion(){
     factorialRecursion(0);
@@ -90,11 +91,21 @@ void testChapter4(){
     //testReverseAStackUsingRecursion();
 }
 
+void testChapter10(){
+    testBubbleSort();
+    testInsertionSort();
+    testSelectionSort();
+    testRankSort();
+    testQuickSort();
+    testHeapSort();
+    testMergeSort();
+}
+
 int main()
 {
     //testChapter2();
-    testChapter4();
-
+    //testChapter4();
+    testChapter10();
     cout << endl << endl << endl;
     return 0;
 }

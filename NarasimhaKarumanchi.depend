@@ -2,9 +2,10 @@
 1520520082 source:e:\codeblocks\narasimhakarumanchi\chapter2.cpp
 	<iostream>
 
-1520519727 source:e:\codeblocks\narasimhakarumanchi\main.cpp
+1520747599 source:e:\codeblocks\narasimhakarumanchi\main.cpp
 	"Chapter2.cpp"
 	"Chapter4.cpp"
+	"Chapter10.cpp"
 
 1520520082 e:\codeblocks\narasimhakarumanchi\chapter2.cpp
 	<iostream>
@@ -24,8 +25,20 @@
 	"include\Stack.h"
 	"include\Util.h"
 
-1520518467 e:\codeblocks\narasimhakarumanchi\include\util.h
+1520610205 e:\codeblocks\narasimhakarumanchi\include\util.h
+	<iostream>
 
 1520518243 source:e:\codeblocks\narasimhakarumanchi\src\util.cpp
 	"Util.h"
+
+1520747579 e:\codeblocks\narasimhakarumanchi\chapter10.cpp
+	<Sorting.h>
+	<iostream>
+
+1520747658 e:\codeblocks\narasimhakarumanchi\include\sorting.h
+	"Util.h"
+
+1520747579 source:e:\codeblocks\narasimhakarumanchi\chapter10.cpp
+	<Sorting.h>
+	<iostream>
 

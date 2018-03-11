@@ -34,8 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Chapter10.cpp" />
 		<Unit filename="Chapter2.cpp" />
 		<Unit filename="Chapter4.cpp" />
+		<Unit filename="include/Sorting.h" />
 		<Unit filename="include/Stack.h" />
 		<Unit filename="include/Util.h" />
 		<Unit filename="main.cpp" />
