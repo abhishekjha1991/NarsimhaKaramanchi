@@ -74,7 +74,7 @@ void Sorting<T>::RankSort(T arr[], int rank[], const unsigned int size){
 template<typename T>
 const unsigned int Sorting<T>::QuickPartition(T arr[], int beg, int end){
     unsigned int index=beg;
-    for(unsigned int loop1=beg+1; loop1<=end; loop1++){
+    for(int loop1=beg+1; loop1<=end; loop1++){
         if(arr[loop1]<arr[beg]){
             index++;
             Util::swap(arr[loop1], arr[index]);

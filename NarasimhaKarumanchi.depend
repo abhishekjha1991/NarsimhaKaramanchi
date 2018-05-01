@@ -2,10 +2,12 @@
 1520520082 source:e:\codeblocks\narasimhakarumanchi\chapter2.cpp
 	<iostream>
 
-1520747599 source:e:\codeblocks\narasimhakarumanchi\main.cpp
+1525174382 source:e:\codeblocks\narasimhakarumanchi\main.cpp
 	"Chapter2.cpp"
 	"Chapter4.cpp"
+	"Chapter6.cpp"
 	"Chapter10.cpp"
+	"Chapter21.cpp"
 
 1520520082 e:\codeblocks\narasimhakarumanchi\chapter2.cpp
 	<iostream>
@@ -35,10 +37,27 @@
 	<Sorting.h>
 	<iostream>
 
-1520747658 e:\codeblocks\narasimhakarumanchi\include\sorting.h
+1520842350 e:\codeblocks\narasimhakarumanchi\include\sorting.h
 	"Util.h"
 
 1520747579 source:e:\codeblocks\narasimhakarumanchi\chapter10.cpp
 	<Sorting.h>
 	<iostream>
+
+1520947735 source:e:\codeblocks\narasimhakarumanchi\chapter6.cpp
+	<iostream>
+	"Tree.h"
+
+1521370487 e:\codeblocks\narasimhakarumanchi\include\tree.h
+	<iostream>
+
+1525001573 e:\codeblocks\narasimhakarumanchi\chapter6.cpp
+	<iostream>
+	"Tree.h"
+
+1525175321 e:\codeblocks\narasimhakarumanchi\chapter21.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"Util.h"
 

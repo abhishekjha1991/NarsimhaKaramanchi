@@ -1,6 +1,8 @@
 #include "Chapter2.cpp"
 #include "Chapter4.cpp"
+#include "Chapter6.cpp"
 #include "Chapter10.cpp"
+#include "Chapter21.cpp"
 
 void testFactorialUsingRecursion(){
     factorialRecursion(0);
@@ -91,6 +93,11 @@ void testChapter4(){
     //testReverseAStackUsingRecursion();
 }
 
+void testChapter6(){
+    BasicTreeCreationAndDeletionTesting();
+    testIfIdenticalTrees();
+}
+
 void testChapter10(){
     testBubbleSort();
     testInsertionSort();
@@ -101,11 +108,24 @@ void testChapter10(){
     testMergeSort();
 }
 
+void testChapter21(){
+    printMatrixSpirally();
+    shuffleDeckOfCards();
+    countAllPossiblePaths();
+    moveSpacesToTheBeginning();
+    moveTheSpacesToTheEnd();
+    moveAllZerosToTheEnd();
+    segregatePositiveAndNegative();
+    rotateArray();
+}
+
 int main()
 {
     //testChapter2();
     //testChapter4();
-    testChapter10();
+    //testChapter6();
+    //testChapter10();
+    testChapter21();
     cout << endl << endl << endl;
     return 0;
 }
